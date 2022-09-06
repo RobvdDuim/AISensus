@@ -1,0 +1,26 @@
+# @hostname = http://localhost:8080
+# get {{hostname}}
+
+# ###
+# curl "http://localhost:8080" -H "Authorization: Token c56ac339688280463139ee2cf4c94d6df1aeec5e" 
+###
+POST http://localhost:8080/api/users/ 
+Authorization: Token c56ac339688280463139ee2cf4c94d6df1aeec5e
+
+Content-Type: application/json
+
+{
+  "username": "USer1"
+} 
+
+###
+curl "http://localhost:8080/api/users/" -H "Authorization: Token c56ac339688280463139ee2cf4c94d6df1aeec5e"
+
+# ###
+# GET http://localhost:8080/api/users/
+# Authorization: Token c56ac339688280463139ee2cf4c94d6df1aeec5e
+# ###
+# GET http://api.labelstud.io/api/current-user/token
+# ###
+
+# post http://localhost:8080
